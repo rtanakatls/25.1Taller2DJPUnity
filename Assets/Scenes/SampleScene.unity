@@ -183,7 +183,7 @@ GameObject:
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &355844357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -533,12 +533,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 758413746}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4f789b65872d49418b6080bc131246a, type: 3}
+  m_Script: {fileID: 11500000, guid: 882a18bfa0c95fe45b429aa39cb785ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 3845197182722560908, guid: 827447c3950dda54eaa43f3ae43f8d17, type: 3}
-  shootDelay: 0.25
-  range: 10
+  turretPrefab: {fileID: 7551492870163155950, guid: 37f65c301aaf9cb4ca3bcf32f4d387e1, type: 3}
 --- !u!1 &1613626511
 GameObject:
   m_ObjectHideFlags: 0

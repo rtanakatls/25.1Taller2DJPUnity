@@ -1,6 +1,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum BulletType
+{
+    Normal,
+    Explosive
+}
+
 public class BaseShoot : MonoBehaviour
 {
     [SerializeField] private GameObject bulletPrefab;
@@ -9,6 +15,9 @@ public class BaseShoot : MonoBehaviour
     private Transform target;
 
     [SerializeField] private float range;
+
+    [SerializeField] private BulletType bulletType;
+    
 
     private void Update()
     {
@@ -43,7 +52,7 @@ public class BaseShoot : MonoBehaviour
             {
                 GameObject obj = Instantiate(bulletPrefab);
                 obj.transform.position = transform.position;
-                obj.GetComponent<BulletMovement>().Setup(direction, target.position);
+                obj.GetComponent<BulletMovement>().Setup(direction, target.position,bulletType);
                 timer = 0;
             }
         }

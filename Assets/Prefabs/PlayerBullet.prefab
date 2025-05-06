@@ -166,4 +166,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: {x: 1, y: 0}
-  speed: 10
+  speed: 20
+  areaRange: 0
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 0
